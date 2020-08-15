@@ -1,4 +1,3 @@
-
 <label>server Name</label>
 <!--<input type="text" class="form-control" (input)="OnUpdateServerName($event)">-->
 <input type="text" class="form-control" [(ngModel)]="serverName">
@@ -6,10 +5,7 @@
 <button class="btn-primary btn" (click)="OnserverCreatin()" [disabled]="!allowNewServe">Server</button>
 <p>{{serverCreatinStatus}}</p>
 <p> Server with {{Serverid}} is {{getServerid}} </p>
-
-
-
 <input type="text" class="form-control" [(ngModel)]="userName">
-<button class="btn btn-success" (click)="onusernameClick()" [disabled]="!userName">username </button>
+<button class="btn-success btn" (click)="onusernameClick()" [disabled]="!userName">username </button>
 <p>{{userName}}</p>
 <p>{{userNameStatus}}</p>
