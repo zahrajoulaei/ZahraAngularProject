@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-project';
+  showSecret = false;
+    log= [];
+
+
+    toggleSecret(){
+      this.showSecret = !this.showSecret;
+      this.log.push(this.log.length +1);
+    }
+
 }
