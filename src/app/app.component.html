@@ -1,19 +1,9 @@
+<app-header></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h3>Angular App</h3>
-      <app-server></app-server>
-      <app-warning-alert></app-warning-alert>
-      <app-success-alert></app-success-alert>
-<!--      <button class="btn btn-primary" (click)="showSecret=!showSecret">Display Details </button>-->
-      <button class="btn btn-primary" (click)="toggleSecret()">Display Details </button>
-      <p *ngIf="showSecret">Secret password is ="lolo" </p>
-      <div *ngFor="let logItem of log; let i =index"
-           [ngStyle]="{backgroundColor: i >=5 ? 'blue': 'transparent'}"
-      [ngClass]="{whiteclass: i>=5}">
-        {{logItem}}
-      </div>
+    <div class="col-md-12">
+      <app-recipes></app-recipes>
+      <app-shopping-list></app-shopping-list>
     </div>
   </div>
 </div>
-
